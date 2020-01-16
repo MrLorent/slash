@@ -1,0 +1,365 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    scroll-behavior:smooth;
+}
+.ap-dropdown-menu {
+    text-align: left;
+    color: #212121 !important;
+} 
+.ap-input {
+    padding: 20px;
+    border-radius: 0;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.responsiveMenu {
+    display: none;
+}
+img.homeLogo {
+    width: 200px;
+}
+header>a{
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    padding: 15px;
+    color: white;
+    background-color: #28282F;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: opacity 0.4s;
+    font-size: 20px;
+}
+header>a>.icon {
+    margin-right: 0;
+    outline: 0 none;
+}
+.videoPresentationLink  {
+    color: #28282F;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav {
+    padding: 20px 0 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    box-sizing: border-box;
+}
+nav ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+}
+nav li a{ 
+    text-transform: uppercase;
+    padding: 18px 34px;
+    color: white;
+    background-color: #28282F;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: opacity 0.4s;
+    font-size: 18px;
+}
+nav li a:hover{
+    background-color: #3b3b46;
+}
+/*corps*/
+
+.texteEtSimulateur {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 100px 100px 100px;
+}
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 55px;
+    color: #28282f;
+    font-weight: normal;
+}
+.dots {
+    width: 5px;
+    margin:-10px 10px 10px 10px;
+}
+h2 {
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 0px;
+}
+
+.textSimulateur {
+    text-align: justify;
+}
+
+
+.titreEtTexte {
+    width: 50%;
+}
+
+footer {
+    background-color: #28282F;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+footer a  {
+    color: white;
+    text-decoration: none;
+    
+    border-bottom: 2px solid white;
+}
+/*Design box simulateur*/
+
+div.zoneSimulateur {
+    background-color: #28282f;
+    color: white;
+    position: relative;
+    display: flex;
+    border: none;
+    box-sizing: border-box;
+    margin-left: 0px;
+    width: 40%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.buttonIcon {
+    height: 80px;
+    width: 12.5%;
+    display: inline-block;
+    justify-content: center;
+    padding: 15px;
+    padding-top: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.buttonIcon:first-child {
+    padding-left: 15px
+}
+
+.buttonIcon:last-child {
+    padding-right: 15px
+}
+
+.buttonIcon:hover {
+    background-color: #00D359;
+}
+.selected {
+    background-color: #00D359;
+}
+textarea {
+    resize: none;
+}
+.textASaisir {
+    padding-left: 45px;
+    margin-bottom: 5px;
+}
+
+.zoneSimulateur p {
+    font-size: 15px;
+    font-style: bold;
+}
+
+#calculer {
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+form {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 40px 50px 40px;
+}
+form input {
+    width:100%;
+    outline: none;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 15px;
+}
+.pinEtInput {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.iconeAlt {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pin {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 40px;
+    position: absolute;
+    
+}
+a.btnCalc {
+    padding: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: white;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    color: #000;
+    text-decoration: none;
+    outline: 0 none;
+    cursor: pointer;
+}
+.resultatSimulateur {
+    text-align: center;
+    padding: 100px 0;
+}
+.resultatSimulateur h2 {
+    font-size: 60px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.resultatHead {
+    text-align: left;
+    margin-left: 100px;
+}
+
+#reset {
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: #02c755;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    color: white;
+    text-decoration: none;
+    outline: 0 none;
+    cursor: pointer;
+}
+#message {
+    background-color: #02c755;
+    color: white;
+    padding: 15px;
+}
+.chiffres {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.chiffres div{
+    width: 15%;
+    text-align: center;
+    font-weight: bold;  
+}
+.chiffres div p:last-child {
+    color: #02c755;
+    margin-top: -40px;
+}
+.chiffreData {
+    font-size: 60px;
+    font-weight: normal;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+@media only screen and (min-width:1000px) {
+    nav ul {
+        display: flex !important;
+    }
+    #closeMenu {
+        display: none;
+    }
+}
+@media only screen and (max-width:1200px) {
+    .texteEtSimulateur {
+flex-direction: column;
+align-items: center;
+        text-align: center;
+    }
+    div.zoneSimulateur {
+    margin-top: 50px;
+    width: 60%;
+}
+    .titreEtTexte {
+        width: 60%;
+    }
+}
+@media only screen and (max-width:1000px) {
+    .responsiveMenu {
+        display: block;
+    }
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top:0;
+        width: 100%;
+        display: none;
+    }
+    nav {
+        display: inline-block;
+    }
+    nav li a {
+        display: block;
+        text-align: right;
+        font-size: 14px;
+    }
+       div.zoneSimulateur {
+    margin-top: 50px;
+    width: 80%;
+}
+    .titreEtTexte {
+        width: 80%;
+    }
+}
+@media only screen and (max-width:970px) {
+    .chiffres {
+        flex-direction: column;
+        justify-content: inherit;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+    .chiffres div {
+        width: 30%;
+    }
+    .chiffres div p:last-child {
+        width: 100%;
+    }
+    .chiffreData {
+        margin-top: 40px;
+        width: 100%;
+        font-size: 100px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .resultatHead{
+        margin-left: 0;
+        padding: 0 50px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:640px) {
+     .chiffres div {
+        width: 50%;
+    }   
+}
+@media only screen and (max-width:450px) {
+     .chiffres div {
+        width: 70%;
+    }   
+}

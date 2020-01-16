@@ -1,0 +1,270 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Open Sans',  sans-serif;
+}
+.actif {
+    background-color: red;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.1);
+    line-height: 80px;
+    flex-shrink: 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+nav>ul {
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #010818;
+}
+nav li:last-child {
+margin-right: 40px;}
+nav>img {
+width: 8%;
+
+}
+
+.altActive{
+    display: block;
+}
+nav>p{
+    margin: 0;
+}
+#marche {
+    height: 100%;
+}
+.alternatives {
+    position: relative;
+    overflow-x: hidden;
+}
+.presentationSommaire {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.alternatives::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content:'';
+    background-color: #2AC36A;
+    top: -50%;
+    z-index: -1;
+    transform: rotate(20deg);
+    left: -75%;
+}
+.presentationDetail::before  {
+ position: absolute;
+    width: 120%;
+    height: 30%;
+    content:'';
+    background-color: #439F69;
+    top: -5%;
+    z-index: -1;
+    transform: rotate(3deg);
+    left: -5%;
+}
+.presentationDetail {
+/*    position: relative;*/
+    height: min-height;
+    background-color: #439F69;
+    color: white;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.sommaireHead {
+    height: 200px;
+    padding: 50px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+.sommaireHead a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+.sommaireHead>h2 {
+    text-align: right;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    color: #272833;
+}
+.presentationSommaire>img {
+    margin-top: -140px;
+    width: 35%;
+}
+.blocContenu {
+    width: 60%;
+    text-align: center;
+}
+.blocContenu div h3 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+.blocSide {
+    width: 30%;
+}
+.avisUtilisateurs {
+    padding-left: 20px;
+    margin-top: 40px;
+}
+.avisHead{
+    display: flex;
+}
+
+.nextImage {
+    align-self: center;
+    margin-left: 15px;
+}
+.avatarPic {
+    width: 60px;
+    vertical-align: middle;
+}
+.nextImage>h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.avisEtoiles {
+    margin: 0;
+}
+.etoiles{
+    width: 20px;
+}
+/*---------------Jauge Sommaire----------*/
+.jaugeSommaire {
+    background-color: #28282F;
+    width: 40%;
+    height: min-content;
+    padding:40px 40px 50px 40px;
+    font-family: 'Archivo Black';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+}
+
+.jaugeSommaire progress {
+    display: inline-block;
+    width: 100%;
+    height: 30px;;
+    background: #00D358;
+/*    margin-left: 8px;*/
+    margin-top: 10px;
+   
+}
+
+.jaugeSommaire p {
+    margin: 0;
+    z-index: 0;
+    position: relative;
+    transform: translateY(8px);
+}
+
+.jaugeSommaire div+div p{
+    margin-top: 15px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #28282F;
+}
+
+progress::-moz-progress-value {
+    background-color: #00D358;
+}
+
+progress::-webkit-progress-value {
+    background-color: #00D358;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #28282F;
+}
+
+/*---------------Jauge Detail----------*/
+.jaugeDetail {
+    width: min-content;
+    height: min-content;
+    padding: 20px;
+    font-family: 'Archivo Black';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    
+}
+
+.jaugeDetail progress {
+    display: inline-block;
+    width: 375px;
+    height: 20px;
+    background: #00D358;
+   
+}
+
+.jaugeDetail p {
+    margin: 0;
+    z-index: 0;
+    position: relative;
+    transform: translateY(8px);
+}
+
+.jaugeDetail div+div p{
+    margin-top: 15px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #28282F;
+}
+
+progress::-moz-progress-value {
+    background-color: #00D358;
+}
+
+progress::-webkit-progress-value {
+    background-color: #00D358;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #28282F;
+}
+.video  {
+    margin-top: 60px;
+}
+
+footer {
+    background-color: #28282F;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+footer a  {
+    color: white;
+    text-decoration: none;
+    
+    border-bottom: 2px solid white;
+}
+.inscription {
+    
+}

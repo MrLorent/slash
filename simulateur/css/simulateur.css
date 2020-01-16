@@ -1,0 +1,248 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Helvetica 65 Medium', sans-serif;
+}
+
+
+/*menu*/
+
+header {
+    height: 20%;
+    display: flex;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    font-family: 'Avenir', sans-serif;
+    position: relative;
+    z-index: 0;
+    height: 180px;
+    box-sizing: border-box;
+    animation: navDown 1s forwards;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul > li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 35px;
+    text-transform: uppercase;
+    color: #707070;
+    transition: transform 0.5s;
+}
+
+li.navLink a {
+    text-decoration: none;
+    color: #505050;
+}
+
+.navLink:hover {
+    transform: rotate(-3deg);
+}
+
+img.logoSlash {
+    width: 150px;
+}
+
+.slashBtn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer !important;
+}
+
+.slashBtn::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background-color: #00D358;
+    z-index: -1;
+    transform: rotate(-3deg);
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.29);
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+
+/*corps*/
+
+main {
+    position: absolute;
+    box-sizing: border-box;
+    height:calc(100% - 180px);
+}
+
+.texteEtSimulateur {
+    position: relative;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.texteEtSimulateur::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    -webkit-clip-path: polygon(0 66%, 0% 100%, 78% 100%);
+    clip-path: polygon(0 66%, 0% 100%, 78% 100%);
+    background-color: #00D358;
+    z-index: -1
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 55px;
+}
+
+h2 {
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 0px;
+}
+
+.textSimulateur {
+    text-align: justify;
+}
+
+
+.titreEtTexte {
+    width: 35%;
+}
+
+
+/*Design box simulateur*/
+
+.zoneSimulateur {
+    background-color: #28282f;
+    color: white;
+    position: relative;
+    display: flex;
+    width: 450px;
+    height: 500px;
+    border: none;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+#buttonIcon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    justify-content: center;
+    padding: 15px;
+    padding-top: 15px;
+}
+
+#buttonIcon:first-child {
+    padding-left: 15px
+}
+
+#buttonIcon:last-child {
+    padding-right: 15px
+}
+
+#buttonIcon:hover {
+    background-color: #00D359;
+}
+
+.saisieVilles {
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+#villeDepart {
+    width: 400px;
+    height: 35px;
+    font-size: 20px;
+    font-family: 'Helvetica 65 Medium', sans-serif;
+    margin-bottom: 20px;
+}
+
+#villeArrivee {
+    width: 400px;
+    height: 35px;
+    font-size: 20px;
+    font-family: 'Helvetica 65 Medium', sans-serif;
+    margin-bottom: 5px;
+}
+
+.textASaisir {
+    padding-left: 45px;
+    margin-bottom: 5px;
+}
+
+.zoneSimulateur p {
+    font-size: 15px;
+    font-style: bold;
+}
+
+#calculer {
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.iconeAlt {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pin {
+    width: 40px;
+}
+
+.pinEtInput {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.calcBtn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer !important;
+    z-index: 0;
+    bottom: -60px;
+    background-color: #00D358;
+}
